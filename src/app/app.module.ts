@@ -9,9 +9,11 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponentComponent } from './auth/login-component/login-component.component';
 import { RegisterComponentComponent } from './auth/register-component/register-component.component';
-import { HeaderComponentComponent } from './shared/header-component/header-component.component';
-import { FooterComponentComponent } from './shared/footer-component/footer-component.component';
-import { NavigationComponentComponent } from './shared/navigation-component/navigation-component.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './pages/login/login.component';
+import { RibbonComponent } from './shared/ribbon/ribbon.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,15 @@ import { NavigationComponentComponent } from './shared/navigation-component/navi
     NotfoundComponent,
     LoginComponentComponent,
     RegisterComponentComponent,
-    HeaderComponentComponent,
-    FooterComponentComponent,
-    NavigationComponentComponent
+    HeaderComponent,
+    FooterComponent,
+    LoginComponent,
+    RibbonComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
