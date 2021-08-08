@@ -14,6 +14,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './pages/login/login.component';
 import { RibbonComponent } from './shared/ribbon/ribbon.component';
+import { UsersComponent } from './pages/users/users.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { RibbonComponent } from './shared/ribbon/ribbon.component';
     FooterComponent,
     LoginComponent,
     RibbonComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,

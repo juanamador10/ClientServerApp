@@ -56,7 +56,6 @@
 </div>
 
 <section class="users-container">
-
     <article class='user' *ngFor='let user of users.data'>
         <div>
             <img src='{{user.avatar}}' alt=''>
@@ -65,6 +64,8 @@
             <p>{{user.id}}</p>
             <h4>{{user.first_name}}{{user.last_name}}</h4>
             <p>{{user.email}}</p>
+            <!-- <p>{{user.id}}</p>
+            <h4>{{user.name}}{{user.lastname}}</h4> -->
         </div>
         
     </article>
